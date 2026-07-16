@@ -1,6 +1,5 @@
 import os
 from dotenv import load_dotenv
-from config import DEBUG, APP_NAME
 
 
 load_dotenv()
