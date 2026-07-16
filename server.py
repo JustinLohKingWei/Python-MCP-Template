@@ -1,6 +1,12 @@
 from mcp.server.fastmcp import FastMCP
+from logger import get_logger
+
+log = get_logger(__name__)
 
 mcp = FastMCP("Python-MCP-Template")
+
+log.info("Server starting...")
+
 
 @mcp.tool()
 def ping(name: str) -> str:
